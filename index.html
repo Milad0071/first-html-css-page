@@ -1,2547 +1,20 @@
-<htmlL>
+<!doctype html>
+<html lang="en">
     <head>
         
-        <title>Akea-minimal blog theme</title>
+        <title>Akea-Minimal Blog Theme</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <style type="text/css">
-            
-            body {
-                
-                margin: 0;
-                padding: 0;
-                font-family: sans-serif;
-                width: 1305px;
-            }
-            
-            #logo {
-                
-                margin-left: 43px;
-                margin-top: 40px;
-                width: 85px;
-                
-            }
-            
-            .top-menu {
-                display:flex;
-                top: 0;
-                position: sticky;
-                background-color: white;
-                padding:10px; 
-                z-index: 1;
-                margin-right: -214px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                /*width: 100%;*/
-                /*
-                align-items:center;
-                justify-content:space-between;
-                
-                
-                align-items:flex-end;
-                align-items:center;
-      
-                flex-direction:column;
-                */
-            }
-            
-            
-            
-            .logo-section {
-                
-                flex: 1;
-                order: 1;
-                
-            }
-            
-            .navbar {
-                
-                flex: 2;
-                order: 2;
-                overflow: hidden;
-                background-color: white;
-                
-                
-            }
-            
-            .navbar a {
-                float: left;
-                font-size: 16px;
-                color: grey;
-                text-align: center;
-                padding: 14px 0px;
-                text-decoration: none;
-                margin-left: 30px;
-                margin-top: 35px;
-                
-            }
-                       
-            .dropdown {
-                float: left;
-                overflow: hidden;
-            }
-            
-            .dropdown .dropbtn {
-                font-size: 16px;  
-                border: none;
-                outline: none;
-                color: gray;
-                padding: 14px 10px;
-                background-color: inherit;
-                font-family: inherit;
-                margin-left: 30px;
-                margin-top: 35px;
-                transition-duration: 0.5s;
-                transition-property: color;
-                cursor: pointer;
-            }
-            
-            .dropbtn:hover {
-                
-                color: black;
-                
-            }
-            
-            .navbar a:hover, .dropdown:hover  dropbtn{
-                /*background-color: red;*/
-                color: black;
-            }
-            
-            
-            
-            .dropdown-content {
-                
-                top: 100px;
-                /*margin-top: 20px;*/
-                margin-left: 40px;
-                display: none;
-                position: absolute;
-                background-color: #333;
-                min-width: 160px;
-                /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-                /*z-index: 1;*/
-            }
-            
-            .dropdown-content a {
-                float: none;
-                /*justify-content: flex-end;*/
-                color: gray;
-                /*padding: 12px 16px;*/
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-            
-            .dropdown-content a:hover {
-                /*background-color: #ddd;*/
-                color: white;
-                
-            }
+        <link rel="stylesheet" type="text/css" href="first-page.css">
 
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            
-            .dropdown-guten {
-                float: left;
-                overflow: hidden;
-            }
-            
-           .dropdown-guten .dropbtn-guten {
-                font-size: 16px;  
-                border: none;
-                outline: none;
-                color: gray;
-                padding: 14px 10px;
-                background-color: inherit;
-                font-family: inherit;
-                margin-left: 30px;
-                margin-top: 35px;
-            }
-            
-            .dropbtn-guten:hover {
-                
-                color: white;
-                
-                
-            }
-            .dropdown-guten:hover  dropbtn-guten{
-                /*background-color: red;*/
-                color: black;
-            }
-            
-            .dropdown-content-guten {
-                display: none;
-                position: absolute;
-                background-color: #333;
-                min-width: 160px;
-                /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-                /*z-index: 1;*/
-            }
-            
-            .dropdown-content-guten a {
-                float: none;
-                display: block;
-                /*justify-content: flex-end;*/
-                color: gray;
-                /*padding: 12px 16px;*/
-                text-decoration: none;
-                text-align: left;
-            }
-            
-            .dropdown-content-guten a:hover {
-                /*background-color: #ddd;*/
-                color: white;
-                
-            }
-            
-            .dropdown-guten:hover .dropdown-content-guten {
-                
-                display: block;
-                
-            }
-            
-            .shortlinks {
-                
-                flex: 1;
-                display: flex;
-                order: 3;
-                margin-top: 45px;
-                width: 0px;
-                padding: 5px 10px;
-                
-                
-                
-            }
-                        
-            .shortlinks a{
-                
-                /*padding: 5px 10px;*/
-                margin-left: 30px;
-                color: gray;
-                text-decoration: none;
-                transition-duration: 1S;
-                transition-property: color;
-                
-            }
-            
-            .shortlinks a:hover {
-                
-                color: #ec6a2a;
-                
-            }
-            
-           
-            
-            #search {
-                
-                /*flex: 1;*/
-                width: 22px;
-                margin-top: -3px;
-                margin-left: 30px;
-                
-            }
-           
-            #breathtaking {
-                
-                position: relative;
-                height: 635px;
-                width: 1519px;
-                filter: brightness(70%);
-                top: -70px;
-                
-            }
-            
-            #big-text {
-                
-                position: absolute;
-                left: 380px;
-                bottom: 217px;
-                color: white;
-                font-size: 270%;
-                /*font-family: Poppins;*/
-                font-weight: 600;
-               
-            }
-            
-            #date {
-                
-                position: absolute;
-                left: 620px;
-                bottom: 205px;
-                color: white;
-                font-weight: 500;
-                font-family: poppins;
-                
-            }
-            
-            #name {
-                
-                position: absolute;
-                left: 805px;
-                bottom: 205px;
-                color: white;
-                font-weight: 500;
-                font-family: poppins;
-                
-            }
-            
-            #recent-articles-container {
-                
-                position: relative;
-                margin-top: -79px;
-                background-color: #e6e6e6;
-                width: 1519px;
-                z-index: 0;
-                
-            }
-            
-            #recent-articles {
-                
-                /*background-color: #e6e6e6;*/
-                text-align: center;
-                margin-top: 0px;
-                font-size: 32px;
-                font-weight: 700;
-                letter-spacing: 0px;
-                text-transform: none;
-                color: #383838;
-                padding-top: 100px;
-                
-            }
-            
-            #small-text {
-                
-                /*background-color: #e6e6e6;*/
-                text-align: center;
-                font-style: normal;
-                color: #747474;
-                margin-top: -10px;
-                padding-bottom: 50px;
-                
-            }
-            
-            .recent-articles-posts-1 {
-                
-                display: flex;
-                /*justify-content: space-around;*/
-                justify-content: space-evenly;
-                align-content: space-between;
-                /*background-color: #f6f6f6;*/
-                padding: 0 130px;
-                z-index: 2;
-                
-            }
-            
-            .recent-articles-posts-2 {
-                
-                display: flex;
-                /*justify-content: space-around;*/
-                justify-content: space-evenly;
-                align-content: space-between;
-                /*background-color: #f6f6f6;*/
-                padding: 0 130px;
-                z-index: 2;
-                
-            }
-            
-            #post-1 {
-                
-                flex: 1;
-                background-color: #ffffff;
-                display: inline-block;
-                /*padding: 0 10px;*/
-                margin-right: 37px;
-                /*width: 680px;*/
-                right: 0px;
-                max-width: 100%;
-                height: 900px;
-                vertical-align: middle;
-                /*position: relative;*/
-                
-            }
-            
-            #post-1-img {
-                
-                position: relative;
-                margin: 0 0;
-                transition: transform .2s;
-                cursor: pointer;
-                
-                /*height: 500px;*/
-                
-            }
-            
-            #post-1-img:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #post-2-img {
-                
-                position: relative;
-                margin: 0 0;
-                transition: transform .2s;
-                cursor: pointer;
-                
-                /*height: 500px;*/
-                
-            }
-            
-            #post-2-img:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #post-3-img {
-                
-                position: relative;
-                margin: 0 0;
-                transition: transform .2s;
-                cursor: pointer;
-                
-                /*height: 500px;*/
-                
-            }
-            
-            #post-3-img:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #post-4-img {
-                
-                position: relative;
-                margin: 0 0;
-                transition: transform .2s;
-                cursor: pointer;
-                
-                /*height: 500px;*/
-                
-            }
-            
-            #post-4-img:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #post-5-img {
-                
-                position: relative;
-                margin: 0 0;
-                transition: transform .2s;
-                cursor: pointer;
-                
-                /*height: 500px;*/
-                
-            }
-            
-            #post-5-img:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #post-6-img {
-                
-                position: relative;
-                margin: 0 0;
-                transition: transform .2s;
-                cursor: pointer;
-                
-                /*height: 500px;*/
-                
-            }
-            
-            #post-6-img:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #post-2 {
-                
-                flex: 1;
-                margin-left: 10px;
-                background-color: #ffffff;
-                display: inline-block;
-                /*padding: 0 10px;*/
-                margin-right: 37px;
-                /*width: 680px;*/
-                right: 0px;
-                max-width: 100%;
-                height: 1000px;
-                
-            }
-            
-            #post-3 {
-                
-                flex: 1;
-                margin-left: 10px;
-                background-color: #ffffff;
-                display: inline-block;
-                /*padding: 0 10px;*/
-                margin-right: 37px;
-                /*width: 680px;*/
-                right: 0px;
-                max-width: 100%;
-                height: 670px;
-                
-            }
-            
-            #post-4 {
-                
-                flex: 1;
-                background-color: #ffffff;
-                display: inline-block;
-                /*padding: 0 10px;*/
-                margin-right: 37px;
-                /*width: 680px;*/
-                right: 0px;
-                max-width: 100%;
-                height: 700px;
-                vertical-align: middle;
-                margin-top: -45px;
-                
-                
-            }
-            
-            #post-4-img {
-                
-                position: relative;
-                margin: 0 0;
-                
-                /*height: 500px;*/
-                
-            }
-            
-            #post-5 {
-                
-                flex: 1;
-                margin-left: 10px;
-                background-color: #ffffff;
-                display: inline-block;
-                /*padding: 0 10px;*/
-                margin-right: 37px;
-                /*width: 680px;*/
-                right: 0px;
-                max-width: 100%;
-                height: 680px;
-                margin-top: 45px;
-                
-            }
-            
-            #post-6 {
-                
-                flex: 1;
-                margin-left: 10px;
-                background-color: #ffffff;
-                display: inline-block;
-                /*padding: 0 10px;*/
-                margin-right: 37px;
-                /*width: 680px;*/
-                right: 0px;
-                max-width: 100%;
-                height: 1025px;
-                margin-top: -285px;
-                
-            }
-            
-            .post-type {
-                
-                margin-top: 80px;
-                margin-left: 40px;
-                color: #ec6a2a;
-                font-size: 12px;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                line-height: 1.8;
-                font-weight: 700;
-                cursor: pointer;
-                
-            }
-            
-            #recent-two-type {
-                
-                display: flex;
-                
-            }
-            
-            #recent-two-type p{
-                
-                margin-top: 80px;
-                margin-left: 40px;
-                color: #ec6a2a;
-                font-size: 12px;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                line-height: 1.8;
-                font-weight: 700;
-                cursor: pointer;
-                padding: 0;
-                
-            }
-            
-            #recent-cama {
-                
-                position: absolute;
-                left: 645px;
-                
-            }
-            
-            #recent-type {
-                
-                position: absolute;
-                left: 655px;
-                
-            }
-            
-            .post-title-link p{
-                
-                
-                color: #343434;
-                cursor: pointer;
-                font-size: 20px;
-                font-weight: 800;
-                line-height: 1.5;
-                margin-left: 30px;
-                padding: 0 10px;
-                transition-duration: 1s;
-                transition-property: color;
-                
-                
-            }
-            
-            .post-title-link {
-                
-                text-decoration: none;
-                
-                
-            }
-            
-            .post-title-link p:hover {
-                
-                color: #ec6a2a
-                
-            }
-            
-            .post-summery {
-                
-                color: #787878;
-                line-height: 1.8;
-                font-weight: 500;
-                font-size: 15px;
-                margin-left: 40px;
-                padding-bottom: 20px;
-                
-            }
-            
-            .post-author-date-link {
-                
-                display: flex;
-                justify-content: flex-start;
-                
-            }
-                
-            .post-author-date-link a{
-                
-                color: #959595;
-                text-decoration: none;
-                cursor: pointer;
-                font-weight: 500;
-                font-size: 12px;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                line-height: 1.8;
-                padding-left: 5px;
-                /*margin-left: 40px;*/
-                
-            }
-            
-            .post-author-name {
-                
-                margin-left: 40px;
-                
-            }
-            
-            .post-date {
-                
-                margin-left: 0px;
-                
-            }
-            
-            .dash {
-                
-                /*position: absolute;*/
-                margin-top: -0px;
-                color: #ec6a2a;
-                padding-left: 5px;
-            }
-            
-            .post-shortlinks {
-                
-               margin-left: 40px;
-                
-            }
-            
-            .post-shortlinks a {
-                
-                /*margin-left: 40px;*/
-                padding-right: 20px;
-                color: black;
-                text-decoration: none;
-                transition-duration: 1s;
-                transition-property: color;
-                
-            }
-            
-            .post-shortlinks a:hover {
-                
-                color: #ec6a2a;
-                
-            }
-            
-            #post-1-circle {
-                
-                position: absolute;
-                bottom: 1217px;
-                left: 125px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #post-4-circle {
-                
-                position: absolute;
-                bottom: 500px;
-                left: 123px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            .like {
-                
-                margin-top: 20px;
-                width: 25px;
-                /*padding-bottom: -20;*/
-                
-            }
-            
-            .like-number {
-                
-                margin-top: 0px;
-                font-size: 80%;
-                font-weight: 700;
-                
-            }
-            
-            #sticky-post {
-                
-                position: absolute;
-                background-color: white;
-                display: inline-block;
-                align-content: center;
-                text-align: center;
-                padding: 10px 17px;
-                /*width: 40px;
-                height: 13px;*/
-                bottom: 1685px;
-                left: 80px;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                font-size: 15px;
-                font-weight: 700;
-                
-            }
-            
-            #sticky-img {
-                
-                width: 8px;
-                margin-right: 10px;
-                
-                
-            }
-            
-            #post-2-circle {
-                
-                position: absolute;
-                bottom: 1120px;
-                left: 570px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #post-5-circle {
-                
-                position: absolute;
-                bottom: 405px;
-                left: 570px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #post-3-circle {
-                
-                position: absolute;
-                bottom: 1450px;
-                left: 1017px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #post-6-circle {
-                
-                position: absolute;
-                bottom: 380px;
-                left: 1015px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #load-button {
-                
-                display: block;;
-                align-items: center;
-                position: absolute;
-                background-color: #e6e6e6;
-                /*margin-left: 540px;*/
-                width: 1519px;
-                
-            }
-            
-            #load {
-                
-                
-                background-color: #2F2F2F;
-                color: #ffffff;
-                width: 400px;
-                max-width: 100%;
-                font-size: 12px;
-                text-transform: uppercase;
-                font-weight: 700;
-                cursor: pointer;
-                letter-spacing: 2px;
-                padding: 20px 50px;
-                display: inline-block;
-                margin-top: 80px;
-                margin-bottom: 100px;
-                margin-left: 540px;
-                /*margin-top: 1100px;*/
-                
-                }
-            
-            #load:hover {
-                
-                background-color: #ec6a2a;
-                
-            }
-            
-            #tech-text {
-                
-                display: flex;
-                height: 500px;
-                margin-top: 300px;
-                
-            }
-            
-            .section-title {
-                
-                flex: 1;
-                padding: 0px 100px;
-                background-color: white;
-                
-            }
-            
-            .title-text {
-                
-                font-size: 32px;
-                font-weight: 700;
-                letter-spacing: 0px;
-                text-transform: none;
-                color: #383838;
-                display: inline-block;
-                line-height: 1.2;
-                
-            }
-            
-            .small-text {
-                
-                font-weight: 500;
-                font-style: normal;
-                color: #747474;
-                font-size: 16px;
-                display: block;
-                line-height: 1.8;
-                margin-top: -30px;
-                
-            }
-            
-            .section-link {
-                
-                flex: 1;
-                text-align: right;
-                display: inline-block;
-                vertical-align: middle;
-                margin-top: 90px;
-                
-            }
-            
-            .link-web {
-                
-                font-size: 15px;
-                font-weight: 400;
-                letter-spacing: 0px;
-                color: #f03d1f;
-                /*text-transform: none;*/
-                cursor: pointer;
-                text-decoration: none;
-                margin-right: 160px;
-                /*margin-bottom:  600px;*/
-                
-            }
-            
-            #tech-posts {
-                
-                display: flex;
-                background-color: white;
-                top: 0;
-                position: relative;
-                margin-top: -320px;
-                justify-content: space-between;
-                padding: 0px 118px;
-                margin-left: -23px;
-                
-            }
-            
-            #big-pic {
-                
-                flex: 1;
-                display: block;
-                /*width: 500px;*/
-                /*padding-right: 45px;*/
-                
-            }
-            
-            #big-post-img {
-                
-                transition: transform .2s;
-                
-            }
-            
-            #big-post-img:hover {
-                
-                 transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #big-post-img{
-                
-                
-                width: 800px;
-                
-                
-            }
-                       
-            #big-post-circle {
-                
-                position: absolute;
-                top: 290px;
-                left: 80px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #post-title {
-                
-                margin-top: 40px;
-                
-            }
-            
-            #big-post-title {
-                
-                color: #343434;
-                text-decoration: none;
-                font-size: 28px;
-                font-weight: 700;
-                letter-spacing: 0px;
-                line-height: 1.2;
-                transition-duration: 1s;
-                transition-property: color;
-                
-                
-            }
-            
-            #big-post-title:hover {
-                
-                color: #ec6a2a;
-                
-            }
-            
-            #post-details {
-                
-                display: flex;
-                justify-content: flex-start;
-                
-            }
-            
-            #author-pic {
-                
-                margin-right: 15px;
-                margin-top: 5px;
-                height: 35px;
-                width: 35px;
-                border-radius: 50%;
-                line-height: 1;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            .detail-text {
-                
-                color: #959595;
-                font-weight: 600;
-                font-size: 12px;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                line-height: 1.8;
-                cursor: pointer;
-                margin-right: 15px;
-                text-decoration: none;
-                
-            }
-            
-            .big-post-dash {
-                
-                color: #ec6a2a;
-                margin-top: 5px;
-                margin-right: 15px;
-                font-weight: 700;
-                
-                
-            }
-            
-            #big-title-summary {
-                
-                margin-top: 20px;
-                margin-bottom: 30px;    
-                display: block;
-                color: #787878;
-                line-height: 1.8;
-                font-weight: 500;
-                font-size: 15px;
-                width: 830px;
-                
-            }
-            
-            #big-post-shortlinks {
-                
-                display: flex;
-                justify-content: space-between;
-                margin-left: 0px;
-                /*left: -50px;
-                width: 1000px;*/
-                
-            }
-            
-            #socials a{
-                
-                padding-right: 15px;
-                
-            }
-            
-            #distance {
-                
-               margin-left: -440px;
-               margin-top: 5px;
-               letter-spacing: 4px;
-               color: #787878;
-                
-            }
-            
-            #comments {
-                
-                display: flex;
-                
-                
-            }
-            
-            #comments a {
-                
-                margin-left: -80px;
-                
-            }
-            
-            #comments img {
-                
-                width: 20px;
-                
-            }
-            
-            #comments p {
-                
-                margin-top: -2px;
-                color: #787878;
-                cursor: pointer;
-                
-            }
-            
-            #socials a{
-                
-                text-decoration: none;
-                color: black;
-                transition-property: color;
-                transition-duration: 1s;
-                
-            }
-            
-            #socials a:hover {
-                
-                color: #ec6a2a;
-                
-            }
-            
-            #other-tech-posts {
-                
-                left: -600px;
-                
-            }
-            
-            .other-post-detail {
-                
-                padding-left: 20px;
-                
-            }
-            
-            #other-post-1 {
-                
-                display: flex;
-                margin-bottom: 20px;
-                
-            }
-            #img-1 {
-                
-                width: 90px;
-                cursor: pointer;
-                transition: transform .2s;
-                
-            }
-            
-            #img-1:hover {
-                
-                transform: scale(1.06);
-                filter: brightness(30%);
-                
-            }
-            
-            #other-post-2 {
-                
-                display: flex;
-                margin-bottom: 20px;
-                
-            }
-            
-            #img-2 {
-                
-                width: 90px;
-                cursor: pointer;
-                transition: transform .2s;
-                
-            }
-            
-            #img-2:hover {
-                
-                transform: scale(1.06);
-                filter: brightness(30%);
-                
-            }
-            
-            #other-post-3 {
-                
-                display: flex;
-                margin-bottom: 20px;
-                
-            }
-            
-            #img-3 {
-                
-                width: 90px;
-                cursor: pointer;
-                transition: transform .2s;
-                
-            }
-            
-            #img-3:hover {
-                
-                transform: scale(1.06);
-                filter: brightness(30%);
-                
-            }
-            
-            #other-post-4 {
-                
-                display: flex;
-                
-            }
-            
-           #img-4 {
-                
-                width: 90px;
-                cursor: pointer;
-                transition: transform .2s;
-                
-            }
-            
-            #img-4:hover {
-                
-                transform: scale(1.06);
-                filter: brightness(30%);
-                
-            }
-            
-            .tech-type a{
-                
-                color: #ec6a2a;
-                text-decoration: none;
-                font-size: 12px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                line-height: 1.8;
-                font-weight: 550;
-                
-            }
-            
-            .other-post-title {
-                
-                width: 333px;
-
-            }
-            
-            .other-post-title a{
-                
-                color: #343434;
-                font-weight: 800;
-                font-size: 17px;
-                line-height: 1.6;
-                text-decoration: none;
-                transition-duration: 1s;
-                transition-property: color;
-                
-                
-            }
-            
-            .other-post-title a:hover {
-                
-                color: #ec6a2a;
-                
-            }
-            
-            .other-post-author {
-                
-                display: flex;
-                margin-top: 20px;
-                
-            }
-            
-            .other-post-author a{
-                
-                color: #959595;
-                text-decoration: none;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                line-height: 1.8;
-                
-            }
-            
-            .other-post-author p{
-                
-                color: #ec6a2a;
-                margin-top: -6px;
-                padding: 0px 10px;
-                
-            }
-            
-            .other-post-author div {
-                
-                color: #959595;
-                margin-left: 5px;
-                margin-top: 3px;
-                font-size: 12px;
-                font-weight: 100;
-                
-            }
-            
-            .two-type {
-                
-                display: flex;
-                
-            }
-            
-            .detail-text a{
-                
-                text-decoration: none;
-                color: #959595;
-                /*margin-top: 40px;*/
-                
-            }
-            
-            .type-cama {
-                
-                margin-top: 0px;
-                
-            }
-            
-            #responsive-ad {
-                
-                display: inline-block;
-                margin-left: 90px;
-                margin-top: 100px;
-                
-            }
-            
-            #ad {
-                
-                width: 1350px;
-                
-            }
-            
-            #fashion-text {
-                
-                display: flex;
-                height: 500px;
-                margin-top: 60px;
-                margin-left: -10px;
-                
-            }
-            
-            #fashion-posts {
-                
-               /*display: flex;*/
-               margin-top: -325px;
-               margin-left: 90px;
-                width: 1350px;
-                
-            }
-            
-            #fashion-post-1 {
-                
-                display: flex;
-                position: relative;
-                padding-bottom: 80px;
-                
-            }
-            
-            #fashion-post-2 {
-                
-                display: flex;
-                position: relative;
-                padding-bottom: 80px;
-                
-            }
-            
-            #fashion-post-3 {
-                
-                display: flex;
-                position: relative;
-                padding-bottom: 80px;
-                
-            }
-            
-            #fashion-post-4 {
-                
-                display: flex;
-                position: relative;
-                padding-bottom: 80px;
-                
-            }
-            
-            .fashion-img {
-                
-                flex: 1;
-                padding-right: 50px;
-                
-            }
-            
-            .fashion-img img {
-                
-                width: 530px;
-                
-            }
-            
-            .fashion-post-detail {
-                
-                flex: 2;
-                
-            }
-            
-            #fs-img-circle-1 {
-                
-                position: absolute;
-                bottom: 65px;
-                left: -15px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #fs-img-circle-1 img {
-                
-                margin-top: 20px;
-                width: 25px;
-                
-            }
-            
-            #fs-img-circle-2 {
-                
-                position: absolute;
-                bottom: 65px;
-                left: -15px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #fs-img-circle-2 img {
-                
-                margin-top: 20px;
-                width: 25px;
-                
-            }
-            
-            #fs-img-circle-3 {
-                
-                position: absolute;
-                bottom: 65px;
-                left: -15px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #fs-img-circle-3 img {
-                
-                margin-top: 20px;
-                width: 25px;
-                
-            }
-            
-            #fs-img-circle-4 {
-                
-                position: absolute;
-                bottom: 65px;
-                left: -15px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #fs-img-circle-4 img {
-                
-                margin-top: 20px;
-                width: 25px;
-                
-            }
-            
-            #fashion-post-detail-1 {
-                
-                margin-top: 40px;
-                padding-bottom: 20px;
-                
-            }
-            
-            #fashion-post-detail-2 {
-                
-                margin-top: 40px;
-                padding-bottom: 20px;
-                
-            }
-            
-            #fashion-post-detail-3 {
-                
-                margin-top: 40px;
-                padding-bottom: 20px;
-                
-            }
-            
-            #fashion-post-detail-4 {
-                
-                margin-top: 40px;
-                padding-bottom: 20px;
-                
-            }
-            
-            .fashion-post-title {
-                
-                padding-bottom: 15px;
-                
-            }
-            
-            .fashion-post-title a{
-                
-                color: #343434;
-                text-decoration: none;
-                font-size: 30px;
-                font-weight: 780;
-                line-height: 1.2;
-                transition-duration: 1s;
-                transition-property: color;
-                
-                
-            }
-            
-            .fashion-post-title a:hover {
-                
-                color: #ec6a2a;
-                
-            }
-            
-            .fashion-post-author {
-                
-                display: flex;
-                
-            }
-            
-            .fashion-post-author a {
-                
-                margin-top: 10px;
-                
-            }
-            
-            #fashion-author-pic {
-                
-                margin-right: 15px;
-                margin-top: 0px;
-                height: 35px;
-                width: 35px;
-                border-radius: 50%;
-                line-height: 1;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            .two-type div {
-                
-                margin-top: 10px;
-                
-            }
-            
-            .two-type p {
-                
-                margin-top: 8px;
-                color: #959595;
-                margin-left: -16px;
-                padding-right: 5px;
-                
-            }
-            
-            .fashion-com-num {
-                
-                color: #959595;
-                margin-left: 5px;
-                margin-top: 13px;
-                font-size: 12px;
-                font-weight: 100;
-                padding-right: 15px;
-                
-            }
-            
-            .fashion-summary {
-                
-                /*display: block;*/
-                color: #787878;
-                line-height: 1.8;
-                font-weight: 500;
-                font-size: 15px;
-                /*width: 600px;*/
-                
-            }
-            
-            .read-more {
-                
-                margin-top: 30px;
-                
-            }
-            
-            .read-more a{
-                
-                color: #ec6a2a;
-                text-decoration: none;
-                font-size: 13px;
-                line-height: 1.8;
-                font-weight: 520;
-                
-            }
-            
-            #fashion-cama-2 {
-                
-                margin-top: 0px;
-                color: #959595;
-                margin-left: -16px;
-                padding-right: 5px;
-                
-            }
-            
-            #fashion-cama-3 {
-                
-                margin-top: 3px;
-                color: #959595;
-                margin-left: -16px;
-                padding-right: 5px;
-                
-            }
-            
-            .fashion-comment-number {
-                
-                color: #959595;
-                margin-left: 3px;
-                margin-top: 13px;
-                font-size: 12px;
-                font-weight: 100;
-                padding-right: 15px;
-                
-            }
-            
-            #fashion-type {
-                
-                margin-top: 10px;
-                
-            }
-            
-            #fashion-type a{
-                
-                text-decoration: none;
-                color: #959595;
-                font-weight: 600;
-                font-size: 12px;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                line-height: 1.8;
-                cursor: pointer;
-                margin-right: 15px;
-                
-           }
-            
-            #subscripe-section {
-                
-               position: relative;
-               margin-left: 87px;
-               display: block;
-                
-            }
-            
-            #newsletter {
-                
-                width: 1365px;
-                height: 300px;
-                
-            }
-            
-            #email-sec {
-                
-                position: absolute;
-                margin-top: -150px;
-                /*background-color: white;*/
-                 
-                
-            }
-            
-            #news-back {
-                
-                position: absolute;
-                background-color: white;
-                opacity: 30%;
-                /*margin-left: 50px;
-                margin-bottom: -50px;*/
-                width: 1280px;
-                height: 220px;
-                top: 40px;
-                left: 40px;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                
-            }
-            
-            #text-section {
-                
-                position: absolute;
-                bottom: -45px;
-                left: 90px;
-                
-                
-            }
-            
-            #text-section h4 {
-                
-                font-size: 22px;
-                font-weight: 600;
-                text-transform: none;
-                color: #383838;
-                letter-spacing: 1px;
-                line-height: 1.2;
-                padding-bottom: 10px;
-                
-            }
-            
-            #text-section p {
-                
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: 2px;
-                color: #a5a5a5;
-                display: inline-block;
-                text-transform: uppercase;
-                line-height: 1.8;
-                width: 400px;
-                margin-top: -30px;
-                
-                
-            }
-            
-            #user-sub {
-                
-                display: flex;
-                position: absolute;
-                left: 750px;
-                bottom: -30px;
-                
-            }
-            
-            #input {
-                
-                color: #7a7a7a;
-                background-color: #ffffff;
-                width: 350px;
-                font-size: 15px;
-                line-height: 20px;
-                border-width: 1px;
-                padding: 19px 20px;
-                height: 58px;
-                border-style: solid;
-                
-                
-            }
-            
-            #input-btn {
-                
-                text-transform: none;
-                letter-spacing: 0;
-                display: block;
-                width: 170px;
-                font-size: 15px;
-                line-height: 20px;
-                padding: 19px 0;
-                height: 58px;
-                background-color: #2F2F2F;
-                color: #ffffff;
-                cursor: pointer;
-                border-style: solid;
-                border-width: 0;
-                font-weight: 700;
-                text-align: center;
-                
-            }
-            
-            #travel-text {
-                
-                display: flex;
-                margin-top: 60px;
-                margin-left: -13px;
-                margin-right: -80px;
-                
-            }
-            
-            #travel-posts {
-                
-                
-                
-            }
-            
-            .travel-posts-1 {
-                
-                display: flex;
-                width: 1439px;
-                margin-left: 80px;
-                margin-top: 60px;
-                position: relative;
-            }
-            
-            .travel-texts {
-                
-                position: relative;
-                margin-top: -45px;
-                margin-left: -40px;
-                width: 430px;
-                
-                
-            }
-           
-            .travel-comment-number {
-                
-                padding-left: 3px;
-                font-size: 13px;
-                color: #959595;
-                padding-top: 2px;
-                
-            }
-            
-            #travel-1-circle {
-                
-                position: absolute;
-                top: -100px;
-                left: 20px;
-                height: 75px;
-                width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                line-height: 1;
-                text-align: center;
-                cursor: pointer;
-                border-color: #e6e6e6;
-                box-shadow: 10px 10px 70px #A5A5A5;
-            
-            }
-            
-            #travel-sticky-post {
-                
-                position: absolute;
-                background-color: white;
-                display: inline-block;
-                align-content: center;
-                text-align: center;
-                padding: 10px 17px;
-                /*width: 40px;
-                height: 13px;*/
-                top: 20px;
-                left: -15px;
-                box-shadow: 10px 10px 70px #A5A5A5;
-                font-size: 15px;
-                font-weight: 700;
-                
-            }
-            
-            #travel-posts-2 {
-                
-                display: flex;
-                width: 950px;
-                margin-left: 80px;
-                margin-top: -290px;
-                position: relative;
-                
-            }
-            
-            #travel-4 {
-                
-                padding-right: 90px;
-                
-            }
-            
-            #travel-5 {
-                
-                padding-right: 90px;
-                
-            }
-            
-            #travel-6 {
-                
-                padding-right: 0px;
-                
-            }
-            
-            #fs-img-1 {
-                
-                transition: transform .2s;
-                cursor: pointer;
-                
-            }
-            
-            #fs-img-1:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #fs-img-2 {
-                
-                transition: transform .2s;
-                cursor: pointer;
-                
-            }
-            
-            #fs-img-2:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #fs-img-3 {
-                
-                transition: transform .2s;
-                cursor: pointer;
-                
-            }
-            
-            #fs-img-3:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #fs-img-4 {
-                
-                transition: transform .2s;
-                cursor: pointer;
-                
-            }
-            
-            #fs-img-4:hover {
-                
-                transform: scale(1.03);
-                filter: brightness(30%);
-                
-            }
-            
-            #gal-img {
-                
-                display: flex;
-                justify-content: flex-start;
-                margin-left: 135px;
-                padding-bottom: 85px;
-                
-            }
-            
-            #gal-img img {
-                
-                width: 250px;
-                
-            }
-            
-            #gallery {
-                
-                margin-top: 140px;
-                background-color: #f5f5f5;
-                width: 1519px;
-                
-            }
-            
-            #gal-text {
-                
-                margin-left: 680px;
-                padding-top: 80px;
-                padding-bottom: 50px;
-                font-size: 18px;
-                font-weight: 600;
-                letter-spacing: 2px;
-                color: #383838;
-                display: inline-block;
-                
-            }
-            
-            #upper-footer {
-                
-                background-color:#1c2433;
-                width: 1519px;
-                margin-top: -15px;
-                display: flex;
-                justify-content: space-around;
-                height: 350px;
-                
-            }
-            
-            #col-1 {
-                
-                margin-left: 200px;
-                
-            }
-            
-            .header {
-                
-                color: #ffffff;
-                text-transform: none;
-                letter-spacing: 0px;
-                font-weight: 800;
-                font-size: 16px;
-                line-height: 1.2;
-                margin-top: 75px;
-                padding-bottom: 30px;
-                
-            }
-            
-            #address {
-                
-                line-height: 1.8;
-                display: block;
-                text-transform: none;
-                color: #7f899b;
-                font-size: 15px;
-                font-weight: 500;
-                
-            }
-            
-            #phone {
-                
-                line-height: 1.8;
-                display: block;
-                text-transform: none;
-                color: #7f899b;
-                font-size: 15px;
-                font-weight: 500;
-                
-            }
-            
-            #e-mail {
-                
-                color: #ec6a2a;
-                text-decoration: none;
-                line-height: 1.8;
-                text-transform: none;
-                font-size: 15px;
-                font-weight: 500;
-                
-            }
-            
-            #col-2 {
-                
-                margin-left: 100px;
-                /*display: flex;*/
-                
-            }
-            
-            .cat {
-                
-                display: flex;
-                justify-content: flex-start;
-                
-            }
-            
-            .cat a{
-                
-                margin-top: 2px;
-                padding-right: 90px;
-                padding-bottom: 25px;
-                color: #747e91;
-                text-decoration: none;
-                font-size: 15px;
-                /*line-height: 1.8;*/
-                font-weight: 500;
-                
-            }
-            
-            #photo {
-                
-                margin-left: -42px;
-                
-            }
-            
-            #fash {
-                
-                margin-left: -4px;
-                
-            }
-            
-            #col-3 {
-                
-                margin-right: 500px;
-            }
-            
-            #footer-shortlinks a{
-            
-                display: inline-block;
-                color: #ffffff;
-                text-transform: none;
-                text-decoration: none;
-                padding-right: 15px;
-                                    
-            }
-            
-            #lower-footer {
-                
-                background-color: #212a39;
-                box-shadow: 10px 10px 10px #A5A5A5;
-                margin-top: -17px;
-                width: 1519px;
-                display: flex;
-                justify-content: space-around;
-                height: 150px;
-                
-            }
-            
-            #copyright {
-                
-                text-transform: none;
-                letter-spacing: 0px;
-                font-size: 14px;
-                display: block;
-                color: #98a5b9;
-                line-height: 1.8;
-                font-weight: 500;
-                margin-left: -60px;
-                padding-top: 25px;
-                padding-bottom: 25px;
-                
-            }
-            
-            #footer-menu {
-                
-                padding-top: 40px;
-                
-            }
-            
-            #footer-menu a{
-                
-                color: #98a5b9;
-                text-decoration: none;
-                text-transform: none;
-                letter-spacing: 0px;
-                line-height: 1.8;
-                font-size: 14px;
-                font-weight: 500;
-                padding-right: 15px;
-                transition-duration: 0.5s;
-                transition-property: color;
-                
-            }
-            
-            #footer-menu a:hover {
-                
-                color: white;
-                
-            }
-            
-            .bottom-menu {
-                
-                position: sticky;
-                display: flex;
-                top: 665px;
-                /*top: 665px;*/
-                background-color: white;
-                overflow: hidden;
-                width: 1519px;
-                height: 75px;
-                z-index: 1;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                justify-content: space-around;
-                /**/
-                /*margin-bottom: 20px;
-                margin-top: 50px;*/
-                
-            }
-            
-            #pic-1 {
-                
-                width: 50px;
-                padding: 15px 3px;
-                height: 40px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-            #pic-1:hover {
-                
-                margin-top: -14px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                
-            }
-            
-            #pic-2 {
-                
-                width: 50px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-             #pic-2:hover {
-                
-                margin-top: 3px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                 
-            }
-            
-            #pic-3 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-            #pic-3:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                 
-            }
-            
-            #pic-4 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-            #pic-4:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                 
-            }
-            
-            #pic-5 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-            #pic-5:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                 
-            }
-            
-            #pic-6 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-             #pic-6:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                 
-            }
-            
-            #pic-7 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-            #pic-7:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                 
-            }
-            
-            #pic-8 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-             #pic-8:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                 
-            }
-            
-            #pic-9 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-             
-            #pic-9:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                
-                 
-            }
-            
-            #pic-10 {
-                
-                width: 50px;
-                height: 40px;
-                padding-bottom: 14px;
-                margin-top: 14px;
-                cursor: pointer;
-                transition-duration: 0.5s;
-                transition-property: margin-top;
-                
-            }
-            
-            #pic-10:hover {
-                
-                margin-top: 1px;
-                box-shadow: 10px 10px 30px #A5A5A5;
-                
-                 
-            }
-            
-            #part-1 {
-                
-                flex:1;
-                margin-left: 40px;
-                
-                
-            }
-            
-            #part-1 p {
-                
-                font-style: normal;
-                font-weight: 400;
-                font-variant: normal;
-                text-transform: none;
-                line-height: 1;
-                font-size: 22px;
-                cursor: pointer;
-                color: #A5A5A5;
-                display: inline-block;
-                
-            }
-            
-            #part-2 {
-                
-                flex: 1;
-                margin-left: -150px;
-                margin-top: 11px;
-                
-            }
-            
-            #part-2 p{
-                
-                font-size: 13px;
-                font-weight: 800;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                
-                
-            }
-            
-            #part-3 {
-                
-                display: flex;
-                flex: 3;
-                margin-left: -150px;
-                
-            }
-            
-            #menu-pic-1 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-2 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-3 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-4 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-5 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-6 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-7 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-8 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-9 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            #menu-pic-10 {
-                
-                padding-right: 6px;
-                
-            }
-            
-            p#first-letter::first-letter {
-                
-                color: red;
-                
-            }
-            
-            p#first-letter ::after {
-                
-               opacity: 0;
-                
-            }
-            
-        </style>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         
     </head>
     
     <body>
         
-        <div class="top-menu">
+        <header class="top-menu">
             <div class="logo-section">
 
                 <img id="logo" src="pics/IKEA%20logo.png">
@@ -2554,11 +27,7 @@
                         Home
                         <i class="fa fa-caret-down"></i>
                     </button>
-                    <div class="under-line">
-                    
-                        <p id="first-letter">----</p>
-                    
-                    </div>
+                   
                     <div class="dropdown-content">
                     
                         <a href="#">Homepage 1</a>
@@ -2661,9 +130,9 @@
             
             
             
-        </div>
+            </header>
         
-        <div class="bottom-menu">
+        <header class="bottom-menu">
         
             <div id="part-1">
             
@@ -2749,319 +218,360 @@
                     
                 </div>
                 
-                
-            
             </div>
+
+
+            <div id="menu-circle">
+                    
+                <img class="up-arrow" src="pics/up-arrow.png">
+    
+            </div>
+
         
-        </div>
+        </header>
         
         
-        
+        <section id="hero">
+
             <img id="breathtaking" src="pics/breathtaking%20places.jpg">
-            <p id="big-text">10 Most Awsome Breathtaking Places</p>
-            <p id="date">October 18, 2018</p>
-            <p id="name">Jane Smith</p>
-            
-        
-        
-        <div id="recent-articles-container">
-        
-            <div id="recent-articles-texts">
-            
-            <p id="recent-articles">Recent Articles</p>
-            <p id="small-text">Most Recent Posts From Akea To Share To Readers</p>
-            
+            <h1 id="big-text">10 Most Awsome Breathtaking Places</h1>
+            <div id="little-details">
+                <p id="date">October 18, 2018</p>
+                <p id="name">Jane Smith</p>
             </div>
+
+        </section>
             
-            <div class="recent-articles-posts-1">
         
-                <div id="post-1">
+        
+        <section id="recent-articles-container">
+        
+            <div class="container">
             
-                    <img id="post-1-img" src="pics/post1.jpg">
-                    <div id = "post-1-texts">
+                <p id="recent-articles">Recent Articles</p>
+                <p id="small-text">Most Recent Posts From Akea To Share To Readers</p>
+            
+                <div id="articles-container">
                 
-                        <p class="post-type">TRENDING</p>
+                    <div class="recent-articles-posts-1">
+        
+                        <div id="post-1">
+            
+                            <div class="img">
+                                
+                                <div class="img-container"><img id="post-1-img" src="pics/post1.jpg"></div>
+                                <div id="post-1-circle">
                     
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/check-out-the-most-awesome-vr-headset-in-2020/"><p>Check Out The Most Awesome VR Headset in 2020</p></a>
+                                    <img class="like" src="pics/like.png">
+                                    <p class="like-number">251</p>
                     
-                        <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
-                    
-                        </div>
-                    
-                        <div class="post-shortlinks">
+                                </div>
+                            
+                            </div>
+
+                            <div id = "post-1-texts">
                 
-                            <a href="#" class="fa fa-facebook"></a>
+                                <p class="post-type">TRENDING</p>
                     
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
+                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/check-out-the-most-awesome-vr-headset-in-2020/"><p>Check Out The Most Awesome VR Headset in 2020</p></a>
                     
-                            <a href="#" class="fa fa-stumbleupon"></a>
+                                <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
+                    
+                                <div class="post-author-date-link">
+                    
+                                    <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
+                                    <p class="dash">-</p>
+                                    <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
+                    
+                                </div>
+                    
+                                <div class="post-shortlinks">
+                
+                                    <a href="#" class="fa fa-facebook"></a>
+                    
+                                    <a href="#" class="fa fa-google-plus"></a>
 
-                            <a href="#" class="fa fa-twitter"></a>
+                                    <a href="#" class="fa fa-pinterest"></a>
+                    
+                                    <a href="#" class="fa fa-stumbleupon"></a>
+
+                                    <a href="#" class="fa fa-twitter"></a>
                                             
-                        </div>
+                                </div>
                     
-                        <div id="post-1-circle">
-                    
-                            <img class="like" src="pics/like.png">
-                            <p class="like-number">251</p>
-                    
-                        </div>
-                    
-                    </div>
+                            </div>
                 
-                    <div id="sticky-post">
+                            <div id="sticky-post">
                 
-                        <img id="sticky-img" src="pics/sticky-post.png"> Sticky Post
+                                <img id="sticky-img" src="pics/sticky-post.png"> Sticky Post
                 
-                    </div>
+                            </div>
             
-                </div>
-            
-                <div id="post-2">
-            
-                    <img id="post-2-img" src="pics/post2.jpg">
-                    <div id = "post-2-texts">
-                
-                        <p class="post-type">TRENDING</p>
-                   
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/or-its-now-the-end-of-smartphones/"><p>Or It’s Now The End of Smartphones?</p></a>
-                    
-                        <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >KELLY GORDON</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
-                      
                         </div>
-                      
-                        <div class="post-shortlinks">
-                
-                            <a href="#" class="fa fa-facebook"></a>
-                    
-                            <a href="#" class="fa fa-google-plus"></a>
 
-                            <a href="#" class="fa fa-pinterest"></a>
+                        <div id="post-4">
+            
+                            <div class="img">
+                                
+                                <div class="img-container"><img id="post-4-img" src="pics/post4.jpg"></div>
+                                <div id="post-4-circle">
                     
-                            <a href="#" class="fa fa-stumbleupon"></a>
+                                    <img class="like" src="pics/empty%20heart.png">
+                                    <p class="like-number">63</p>
+                    
+                                </div>
+                            
+                            </div>
 
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="post-2-circle">
-                    
-                            <img class="like" src="pics/like.png">
-                            <p class="like-number">308</p>
-                    
-                        </div>
+                            <div id = "post-4-texts">
                 
-                    </div>
-                
-                </div>
-            
-                <div id="post-3">
-            
-                    <img id="post-3-img" src="pics/post3.jpg">
-                
-                    <div id = "post-3-texts">
-                
-                        <p class="post-type">TRENDING</p>
+                                <p class="post-type">TRENDING</p>
                     
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/xe-entertainment-brings-you-new-experience-of-fun/"><p>XE Entertainment Brings You New Experience of Fun</p></a>
+                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/08/twitters-new-head-quarter-that-has-many-new-technologies/"><p>Twitter’s New Head Quarter That Has Many New Technologies</p></a>
                     
-                        <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                                <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
                     
-                        <div class="post-author-date-link">
+                                <div class="post-author-date-link">
                     
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
+                                    <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
+                                    <p class="dash">-</p>
+                                    <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 8, 2018</a>
                      
-                        </div>
+                                </div>
                     
-                        <div class="post-shortlinks">
+                                <div class="post-shortlinks">
                 
-                            <a href="#" class="fa fa-facebook"></a>
+                                    <a href="#" class="fa fa-facebook"></a>
                     
-                            <a href="#" class="fa fa-google-plus"></a>
+                                    <a href="#" class="fa fa-google-plus"></a>
 
-                            <a href="#" class="fa fa-pinterest"></a>
-                    
-                            <a href="#" class="fa fa-stumbleupon"></a>
-
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="post-3-circle">
-                    
-                            <img class="like" src="pics/like.png">
-                            <p class="like-number">163</p>
-                    
-                        </div>
-                
-                    </div>
-               
-                </div>
-        
-            </div>
-            
-            <div class="recent-articles-posts-2">
-        
-                <div id="post-4">
-            
-                    <img id="post-4-img" src="pics/post4.jpg">
-                    <div id = "post-4-texts">
-                
-                        <p class="post-type">TRENDING</p>
-                    
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/08/twitters-new-head-quarter-that-has-many-new-technologies/"><p>Twitter’s New Head Quarter That Has Many New Technologies</p></a>
-                    
-                        <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 8, 2018</a>
-                     
-                        </div>
-                    
-                        <div class="post-shortlinks">
-                
-                            <a href="#" class="fa fa-facebook"></a>
-                    
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
-                    
-                            <a href="#" class="fa fa-stumbleupon"></a>
-
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="post-4-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">63</p>
-                    
-                        </div>
-                    
-                    </div>      
-            
-                </div>
-                
-                <div id="post-5">
-            
-                    <img id="post-5-img" src="pics/post5.jpg">
-                    <div id = "post-5-texts">
-                
-                        <div id="recent-two-type">
-                           <p class="post-type">TECHNOLOGY</p>
-                           <p id="recent-cama">,</p>
-                           <p id="recent-type">TRENDING</p>
-                        </div>
-                   
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/07/8-most-awesome-gadgets-for-2019/"><p>8 Most Awesome Gadgets For 2019</p></a>
-                    
-                        <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >JAMES SMITH</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 7, 2018</a>
-                    
-                        </div>
-                    
-                        <div class="post-shortlinks">
-                
-                            <a href="#" class="fa fa-facebook"></a>
-                    
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
-                    
-                            <a href="#" class="fa fa-stumbleupon"></a>
-
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="post-5-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">176</p>
+                                    <a href="#" class="fa fa-pinterest"></a>
                         
+                                    <a href="#" class="fa fa-stumbleupon"></a>
+
+                                    <a href="#" class="fa fa-twitter"></a>
+                                            
+                                </div>
+                    
+                            </div>      
+            
                         </div>
-                
+
                     </div>
+
+                    <div class="recent-articles-posts-2">
+
+                        <div id="post-2">
             
-                </div>
-            
-                <div id="post-6">
-            
-                    <img id="post-6-img" src="pics/post6.jpg">
+                            <div class="img">
+                                
+                                <div class="img-container"><img id="post-2-img" src="pics/post2.jpg"></div>
+                                <div id="post-2-circle">
+                    
+                                    <img class="like" src="pics/like.png">
+                                    <p class="like-number">308</p>
+                    
+                                </div>
+                            
+                            </div>
+                            <div id = "post-2-texts">
                 
-                    <div id = "post-6-texts">
+                                <p class="post-type">TRENDING</p>
+                   
+                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/or-its-now-the-end-of-smartphones/"><p>Or It’s Now The End of Smartphones?</p></a>
+                    
+                                <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
+                    
+                                <div class="post-author-date-link">
+                    
+                                    <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >KELLY GORDON</a>
+                                    <p class="dash">-</p>
+                                    <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
+                      
+                                </div>
+                      
+                                <div class="post-shortlinks">
                 
-                        <p class="post-type">TRENDING</p>
+                                    <a href="#" class="fa fa-facebook"></a>
+                    
+                                    <a href="#" class="fa fa-google-plus"></a>
+
+                                    <a href="#" class="fa fa-pinterest"></a>
+                    
+                                    <a href="#" class="fa fa-stumbleupon"></a>
+
+                                    <a href="#" class="fa fa-twitter"></a>
+                                            
+                                </div>
+                    
+                            </div>
+                
+                        </div>
+
+                        <div id="post-5">
+            
+                            <div class="img">
+                                
+                                <div class="img-container"><img id="post-5-img" src="pics/post5.jpg"></div>
+                                <div id="post-5-circle">
+                    
+                                    <img class="like" src="pics/empty%20heart.png">
+                                    <p class="like-number">176</p>
+                        
+                                </div>
+                            
+                            </div>
+
+                            <div id = "post-5-texts">
+                
+                                <div id="recent-two-type">
+                                    <p class="post-type">TECHNOLOGY</p>
+                                    <p id="recent-cama">,</p>
+                                    <p id="recent-type">TRENDING</p>
+                                </div>
+                   
+                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/07/8-most-awesome-gadgets-for-2019/"><p>8 Most Awesome Gadgets For 2019</p></a>
+                    
+                                <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                    
+                                <div class="post-author-date-link">
+                    
+                                    <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >JAMES SMITH</a>
+                                    <p class="dash">-</p>
+                                    <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 7, 2018</a>
+                    
+                                </div>
+                    
+                                <div class="post-shortlinks">
+                
+                                    <a href="#" class="fa fa-facebook"></a>
+                    
+                                    <a href="#" class="fa fa-google-plus"></a>
+
+                                    <a href="#" class="fa fa-pinterest"></a>
+                    
+                                    <a href="#" class="fa fa-stumbleupon"></a>
+
+                                    <a href="#" class="fa fa-twitter"></a>
+                                            
+                                </div>
+                    
+                            </div>
+            
+                        </div>
+
+                    </div>
+
+                    <div class="recent-articles-posts-3">
+
+                        <div id="post-3">
+            
+                            <div class="img">
+                                
+                                <div class="img-container"><img id="post-3-img" src="pics/post3.jpg"></div>
+                                <div id="post-3-circle">
+                    
+                                    <img class="like" src="pics/like.png">
+                                    <p class="like-number">163</p>
+                    
+                                </div>
+                            
+                            </div>
+                
+                            <div id = "post-3-texts">
+                
+                                <p class="post-type">TRENDING</p>
+                            
+                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/xe-entertainment-brings-you-new-experience-of-fun/"><p>XE Entertainment Brings You New Experience of Fun</p></a>
+                    
+                                <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                    
+                                <div class="post-author-date-link">
+                    
+                                    <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
+                                    <p class="dash">-</p>
+                                    <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
+                     
+                                </div>
+                    
+                                <div class="post-shortlinks">
+                
+                                    <a href="#" class="fa fa-facebook"></a>
+                                
+                                    <a href="#" class="fa fa-google-plus"></a>
+
+                                    <a href="#" class="fa fa-pinterest"></a>
+                    
+                                    <a href="#" class="fa fa-stumbleupon"></a>
+                                    
+                                    <a href="#" class="fa fa-twitter"></a>
+                                            
+                                </div>
+                    
+                            </div>
+               
+                        </div>
+
+                        <div id="post-6">
+            
+                            <div class="img">
+                                
+                                <div class="img-container"><img id="post-6-img" src="pics/post6.jpg"></div>
+                                <div id="post-6-circle">
+                    
+                                    <img class="like" src="pics/empty%20heart.png">
+                                    <p class="like-number">104</p>
+                    
+                                </div>
+                            
+                            </div>
+                
+                            <div id = "post-6-texts">
+                
+                                <p class="post-type">TRENDING</p>
                        
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/16/top-10-beautiful-beach-must-visit/"><p>Top 10 Beautiful Beach Must Visit</p></a>
+                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/16/top-10-beautiful-beach-must-visit/"><p>Top 10 Beautiful Beach Must Visit</p></a>
                     
-                        <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                                <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
                     
-                        <div class="post-author-date-link">
+                                <div class="post-author-date-link">
                     
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 16, 2018</a>
+                                    <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
+                                    <p class="dash">-</p>
+                                    <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 16, 2018</a>
                     
-                        </div>
+                                </div>
                     
-                        <div class="post-shortlinks">
+                                <div class="post-shortlinks">
                 
-                            <a href="#" class="fa fa-facebook"></a>
+                                    <a href="#" class="fa fa-facebook"></a>
                     
-                            <a href="#" class="fa fa-google-plus"></a>
+                                    <a href="#" class="fa fa-google-plus"></a>
 
-                            <a href="#" class="fa fa-pinterest"></a>
+                                    <a href="#" class="fa fa-pinterest"></a>
                     
-                            <a href="#" class="fa fa-stumbleupon"></a>
+                                    <a href="#" class="fa fa-stumbleupon"></a>
 
-                            <a href="#" class="fa fa-twitter"></a>
-                                                  
+                                    <a href="#" class="fa fa-twitter"></a>
+                                                      
+                                </div>
+                    
+                            </div>
+            
                         </div>
-                    
-                        <div id="post-6-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">104</p>
-                    
-                        </div>
-                
+
                     </div>
-            
+
                 </div>
-        
-            </div>
-            
-            <div id="load-button"> <button id="load">LOAD MORE</button></div>
-        
+
+                 <div id="load-btn"><button id="load">LOAD MORE</button></div>
+
             </div>
         
-        <div id="Tech-text">
+        </section>
+        
+        <section class="container">
+         <div id="Tech-text">
         
             <div class="section-title">
             
@@ -3076,7 +586,7 @@
             
             </div>
         
-        </div>
+         </div>
         
         <div id="tech-posts">
         
@@ -3266,6 +776,7 @@
             </div>
         
         </div>
+    </section>
         
         <div id="responsive-ad">
         
@@ -3273,41 +784,41 @@
         
         </div>
         
-         <div id="fashion-text">
+        <section class="container">
+            <div id="fashion-text">
         
-            <div class="section-title">
+                <div class="section-title">
             
-                <h4 class="title-text">Fashion</h4>
-                <p class="small-text">Getting update to the trend</p>
+                    <h4 class="title-text">Fashion</h4>
+                    <p class="small-text">Getting update to the trend</p>
             
+                </div>
+            
+                <div class="section-link">
+            
+                    <a class="link-web" href="https://demo.goodlayers.com/akea/homepage2/#">More In Fasion &rarr;</a>
+            
+                </div>
+        
             </div>
-            
-            <div class="section-link">
-            
-                <a class="link-web" href="https://demo.goodlayers.com/akea/homepage2/#">More In Fasion &rarr;</a>
-            
-            </div>
         
-        </div>
-        
-        <div id="fashion-posts">
+            <div id="fashion-posts">
             
                 <div id="fashion-post-1">
                 
                     <div class="fashion-img">
                         
-                        <img id="fs-img-1" src="pics/fashion%201.jpeg">
-                        <div id="fs-img-circle-1">
+                        <div class="fash-img"><img id="fs-img-1" src="pics/fashion%201.jpeg"></div>
+                        <div class="fs-img-circle">
                     
                             <img class="like" src="pics/like.png">
                             <p class="like-number">39</p>
                     
                         </div>
-                    
+                        
+                        
                     </div>
-                    
-                    
-                    
+
                     <div id="fashion-post-detail-1">
                     
                         <div class="fashion-post-title"><a  href="https://demo.goodlayers.com/akea/homepage2/2018/10/22/5-beginner-photographers-mistakes/">5 Beginner Photographer’s Mistakes</a></div>
@@ -3337,13 +848,13 @@
                     </div>
                 
                 </div>
-                
+
                 <div id="fashion-post-2">
                 
                     <div class="fashion-img">
                         
-                        <img id="fs-img-2" src="pics/fashion%202.jpg">
-                        <div id="fs-img-circle-2">
+                        <div class="fash-img"><img id="fs-img-2" src="pics/fashion%202.jpg"></div>
+                        <div class="fs-img-circle">
                     
                             <img class="like" src="pics/empty%20heart.png">
                             <p class="like-number">26</p>
@@ -3383,13 +894,13 @@
                     </div>
                 
                 </div>
-                
+
                 <div id="fashion-post-3">
                 
                     <div class="fashion-img">
                         
-                        <img id="fs-img-3" src="pics/fashion%203.jpg">
-                        <div id="fs-img-circle-3">
+                        <div class="fash-img"><img id="fs-img-3" src="pics/fashion%203.jpg"></div>
+                        <div class="fs-img-circle">
                     
                             <img class="like" src="pics/empty%20heart.png">
                             <p class="like-number">38</p>
@@ -3429,13 +940,13 @@
                     </div>
                 
                 </div>
-                
+
                 <div id="fashion-post-4">
                 
                     <div class="fashion-img">
                         
-                        <img id="fs-img-4" src="pics/fashion%204.jpg">
-                        <div id="fs-img-circle-4">
+                        <div class="fash-img"><img id="fs-img-4" src="pics/fashion%204.jpg"></div>
+                        <div class="fs-img-circle">
                     
                             <img class="like" src="pics/empty%20heart.png">
                             <p class="like-number">31</p>
@@ -3471,463 +982,517 @@
                     </div>
                 
                 </div>
-            
+
             </div>
+        </section>
         
-        <div id="subscripe-section">
-        
-            <div id="subs-img">
-            
-                <img id="newsletter" src="pics/newsletter.jpg">
-                <div id="news-back"></div>
-            
-            </div>
-            
-            <div id="email-sec">
-            
-                
-                
-                <div id="text-section">
-                
-                    <h4 id="news">Newsletter</h4>
-                    <p id="news-text">FILL YOUR EMAIL BELOW TO SUBSCRIBE TO US</p>
-                
-                </div>
-                
-                <div id="user-sub">
-                
-                    <input id="input" placeholder="Your Email Address">
-                    <input id="input-btn" type="submit" value="Subscribe">
-                
-                </div>
-            
-            </div>
-        
-        </div>
-        
-        <div id="travel-text">
-        
-            <div class="section-title">
-            
-                <h4 class="title-text">Travel Tips</h4>
-                <p class="small-text">All you need to know before traveling</p>
-            
-            </div>
-            
-            <div class="section-link">
-            
-                <a class="link-web" href="https://demo.goodlayers.com/akea/homepage2/#">More In Travel &rarr;</a>
-            
-            </div>
-        
-        </div>
-            
-        <div id="travel-posts">
-        
-            <div class="travel-posts-1">
-        
-                <div id="post-1">
-            
-                    <img id="post-1-img" src="pics/travel%201.jpg">
-                    <div class = "travel-texts">
-                
-                        <p class="post-type">FOOD, TRAVEL</p>
-                    
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/06/02/5-amazing-places-to-visit-in-summer/"><p>5 Amazing Places To Visit In Summer</p></a>
-                    
-                        <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">June 2, 2018</a>
-                            <p class="dash">-</p>
-                            <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
-                            <div class="travel-comment-number">0</div>
-                    
+        <section>
+
+            <div class="container">
+
+                <div class="email-sec">
+
+                    <div class="sub-sec">
+
+                        <div>
+                            
+                            <h4 class="title-sub">Newsletter</h4>
+                            <p class="title-tex">FILL YOUR EMAIL BELOW TO SUBSCRIBE TO US</p>
+                        
                         </div>
+
+                        <div class="write">
+
+                            <input class="add" placeholder="Your Email Address">
+                            <input class="button" type="submit" value="Subscribe">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+       <section class="container">
+
+            <div id="travel-text">
+        
+                <div class="section-title">
+            
+                    <h4 class="title-text">Travel Tips</h4>
+                    <p class="small-text">All you need to know before traveling</p>
+            
+                </div>
+            
+                <div class="section-link">
+            
+                    <a class="link-web" href="https://demo.goodlayers.com/akea/homepage2/#">More In Travel &rarr;</a>
+            
+                </div>
+        
+            </div>
+       
+            <div id="travel-posts">
+        
+                <div class="travel-posts-1">
+        
+                    <div id="travel-1">
+            
+                        <div class="travel-img">
+                            
+                            <div class="travel-images"><img id="travel-1-img" src="pics/travel%201.jpg"></div>
+                            <div class="travel-circle">
                     
-                        <div class="post-shortlinks">
+                                <img class="like" src="pics/empty%20heart.png">
+                                <p class="like-number">24</p>
+                    
+                            </div>
+                        
+                        </div>
+                        <div class = "travel-texts">
                 
-                            <a href="#" class="fa fa-facebook"></a>
+                            <p class="travel-type">FOOD, TRAVEL</p>
                     
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
+                            <a class="travel-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/06/02/5-amazing-places-to-visit-in-summer/"><p>5 Amazing Places To Visit In Summer</p></a>
                     
-                            <a href="#" class="fa fa-stumbleupon"></a>
+                            <div class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                    
+                            <div class="travel-author-date-link">
+                    
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">June 2, 2018</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
+                                <div class="travel-comment-number">0</div>
+                    
+                            </div>
+                    
+                            <div class="travel-shortlinks">
+                
+                                <a href="#" class="fa fa-facebook"></a>
+                    
+                                <a href="#" class="fa fa-google-plus"></a>
 
-                            <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-pinterest"></a>
+                    
+                                <a href="#" class="fa fa-stumbleupon"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
                                             
-                        </div>
+                            </div>
                     
-                        <div id="travel-1-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">24</p>
+                            
                     
                         </div>
-                    
+                
+                        <div id="travel-sticky-post">
+                
+                            <img id="sticky-img" src="pics/sticky-post.png"> Sticky Post
+                
+                        </div>
+            
                     </div>
-                
-                    <div id="travel-sticky-post">
-                
-                        <img id="sticky-img" src="pics/sticky-post.png"> Sticky Post
-                
-                    </div>
+
+                    <div id="travel-4">
             
-                </div>
-            
-                <div id="post-2">
-            
-                    <img id="post-2-img" src="pics/travel%202.jpeg">
-                    <div class = "travel-texts">
-                
-                        <p class="post-type">TRAVEL</p>
+                        <div class="travel-img">
+                            
+                            <div class="travel-images"><img id="travel-4-img" src="pics/travel%204.jpg"></div>
+                            <div class="travel-circle">
                     
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/03/9-most-awesome-blue-lake-with-snow-mountain/"><p>9 Most Awesome Blue Lake With Snow Mountain</p></a>
-                    
-                        <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 3, 2018</a>
-                            <p class="dash">-</p>
-                            <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
-                            <div class="travel-comment-number">0</div>
-                    
+                                <img class="like" src="pics/empty%20heart.png">
+                                 <p class="like-number">26</p>
+                     
+                             </div>
+                        
                         </div>
-                    
-                        <div class="post-shortlinks">
+                        <div class = "travel-texts">
                 
-                            <a href="#" class="fa fa-facebook"></a>
+                            <p class="travel-type">HEADLINE, TRAVEL</p>
                     
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
+                            <a class="travel-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/10/18/10-most-awesome-breathtaking-places/"><p>10 Most Awesome Breathtaking Places</p></a>
                     
-                            <a href="#" class="fa fa-stumbleupon"></a>
+                            <div class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                    
+                            <div class="travel-author-date-link">
+                    
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 28, 2018</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
+                                <div class="travel-comment-number">0</div>
+                    
+                            </div>
+                    
+                            <div class="travel-shortlinks">
+                
+                                <a href="#" class="fa fa-facebook"></a>
+                    
+                                <a href="#" class="fa fa-google-plus"></a>
 
-                            <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-pinterest"></a>
+                    
+                                <a href="#" class="fa fa-stumbleupon"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
                                             
-                        </div>
+                            </div>
                     
-                        <div id="travel-1-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">54</p>
+                            
                     
                         </div>
-                    
+                
+            
                     </div>
+
+                </div>
+
+                <div class="travel-posts-2">
+
+                    <div id="travel-2">
+            
+                        <div class="travel-img">
+                            
+                            <img id="travel-2-img" src="pics/travel%202.jpeg">
+                            <div class="travel-circle">
+                    
+                                <div class="travel-images"><img class="like" src="pics/empty%20heart.png"></div>
+                                <p class="like-number">54</p>
+                    
+                            </div>
+                        
+                        </div>
+
+                        <div class = "travel-texts">
+                
+                            <p class="travel-type">TRAVEL</p>
+                    
+                            <a class="travel-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/03/9-most-awesome-blue-lake-with-snow-mountain/"><p>9 Most Awesome Blue Lake With Snow Mountain</p></a>
+                    
+                            <div class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                    
+                            <div class="travel-author-date-link">
+                    
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 3, 2018</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
+                                <div class="travel-comment-number">0</div>
+                    
+                            </div>
+                    
+                            <div class="travel-shortlinks">
+                
+                                <a href="#" class="fa fa-facebook"></a>
+                    
+                                <a href="#" class="fa fa-google-plus"></a>
+
+                                <a href="#" class="fa fa-pinterest"></a>
+                    
+                                <a href="#" class="fa fa-stumbleupon"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
+                                            
+                            </div>
+                    
+                            
+                        </div>
                                     
-                </div>
-            
-                <div id="post-3">
-            
-                    <img id="post-3-img" src="pics/travel%203.jpg">
-                    <div class = "travel-texts">
-                
-                        <p class="post-type">TRAVEL</p>
-                    
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/10/26/8-ways-to-travel-like-a-pro/"><p>8 Ways To Travel Like a Pro</p></a>
-                    
-                        <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Kelly Gordon</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 26, 2018</a>
-                            <p class="dash">-</p>
-                            <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
-                            <div class="travel-comment-number">0</div>
-                    
-                        </div>
-                    
-                        <div class="post-shortlinks">
-                
-                            <a href="#" class="fa fa-facebook"></a>
-                    
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
-                    
-                            <a href="#" class="fa fa-stumbleupon"></a>
-
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="travel-1-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">36</p>
-                    
-                        </div>
-                    
                     </div>
+
+                    <div id="travel-5">
+            
+                        <div class="travel-img">
+                            
+                            <div class="travel-images"><img id="travel-5-img" src="pics/travel%205.jpeg"></div>
+                            <div class="travel-circle">
+                    
+                                <img class="like" src="pics/empty%20heart.png">
+                                <p class="like-number">38</p>
+                    
+                            </div>
+                        
+                        </div>
+                        <div class = "travel-texts">
+                
+                            <p class="travel-type">TRAVEL</p>
+                    
+                            <a class="travel-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/03/gutenberg-post-ex-3/"><p>Gutenberg Post Ex 3</p></a>
+                    
+                            <div class="travel-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live...</div>
+                    
+                            <div class="travel-author-date-link">
+                    
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 3, 2018</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
+                                <div class="travel-comment-number">0</div>
+                    
+                            </div>
+                    
+                            <div class="travel-shortlinks">
+                
+                                <a href="#" class="fa fa-facebook"></a>
+                    
+                                <a href="#" class="fa fa-google-plus"></a>
+
+                                <a href="#" class="fa fa-pinterest"></a>
+                    
+                                <a href="#" class="fa fa-stumbleupon"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
+                                            
+                            </div>
+                    
+                            
+                    
+                        </div>
                                     
+                    </div>
+
                 </div>
-        
+
+                <div class="travel-posts-3">
+
+                    <div id="travel-3">
+            
+                        <div class="travel-img">
+                            
+                            <div class="travel-images"><img id="travel-3-img" src="pics/travel%203.jpg"></div>
+                            <div class="travel-circle">
+                    
+                                <img class="like" src="pics/empty%20heart.png">
+                                <p class="like-number">36</p>
+                    
+                            </div>
+                        
+                        </div>
+
+                        <div class = "travel-texts">
+                
+                            <p class="travel-type">TRAVEL</p>
+                    
+                            <a class="travel-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/10/26/8-ways-to-travel-like-a-pro/"><p>8 Ways To Travel Like a Pro</p></a>
+                    
+                            <div class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                    
+                            <div class="travel-author-date-link">
+                    
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Kelly Gordon</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 26, 2018</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
+                                <div class="travel-comment-number">0</div>
+                    
+                            </div>
+                    
+                            <div class="travel-shortlinks">
+                
+                                <a href="#" class="fa fa-facebook"></a>
+                    
+                                <a href="#" class="fa fa-google-plus"></a>
+
+                                <a href="#" class="fa fa-pinterest"></a>
+                    
+                                <a href="#" class="fa fa-stumbleupon"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
+                                            
+                            </div>
+                    
+                            
+                    
+                        </div>
+                                    
+                    </div>
+
+                    <div id="travel-6">
+            
+                        <div class="travel-img">
+                            
+                            <div class="travel-images"><img id="travel-6-img" src="pics/travel%206.jpg"></div>
+                            <div class="travel-circle">
+                    
+                                <img class="like" src="pics/empty%20heart.png">
+                                <p class="like-number">28</p>
+                    
+                            </div>
+                        
+                        </div>
+
+                        <div class = "travel-texts">
+                
+                            <p class="travel-type">TECHNOLOGY, TRAVEL</p>
+                    
+                            <a class="travel-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/08/17/top-15-social-network-app-you-need-to-travel/"><p>Top 15 Social Network App You Need To Travel</p></a>
+                    
+                            <div class="travel-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live...</div>
+                    
+                            <div class="travel-author-date-link">
+                    
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">August 17, 2018</a>
+                                <p class="travel-dash">-</p>
+                                <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
+                                <div class="travel-comment-number">0</div>
+                    
+                            </div>
+                    
+                            <div class="travel-shortlinks">
+                
+                                <a href="#" class="fa fa-facebook"></a>
+                    
+                                <a href="#" class="fa fa-google-plus"></a>
+
+                                <a href="#" class="fa fa-pinterest"></a>
+                    
+                                <a href="#" class="fa fa-stumbleupon"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
+                                            
+                            </div>
+                    
+                            
+                    
+                        </div>
+                                    
+                    </div>
+
+                </div>
+         
             </div>
             
-            <div id="travel-posts-2">
-        
-                <div id="travel-4">
+        </section>
             
-                    <img id="post-4-img" src="pics/travel%204.jpg">
-                    <div class = "travel-texts">
-                
-                        <p class="post-type">HEADLINE, TRAVEL</p>
-                    
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/10/18/10-most-awesome-breathtaking-places/"><p>10 Most Awesome Breathtaking Places</p></a>
-                    
-                        <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 28, 2018</a>
-                            <p class="dash">-</p>
-                            <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
-                            <div class="travel-comment-number">0</div>
-                    
-                        </div>
-                    
-                        <div class="post-shortlinks">
-                
-                            <a href="#" class="fa fa-facebook"></a>
-                    
-                            <a href="#" class="fa fa-google-plus"></a>
+        <section class="gallery">
 
-                            <a href="#" class="fa fa-pinterest"></a>
-                    
-                            <a href="#" class="fa fa-stumbleupon"></a>
-
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="travel-1-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">26</p>
-                    
-                        </div>
-                    
-                    </div>
-                
-            
-                </div>
-            
-                <div id="travel-5">
-            
-                    <img id="post-5-img" src="pics/travel%205.jpeg">
-                    <div class = "travel-texts">
-                
-                        <p class="post-type">TRAVEL</p>
-                    
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/03/gutenberg-post-ex-3/"><p>Gutenberg Post Ex 3</p></a>
-                    
-                        <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 3, 2018</a>
-                            <p class="dash">-</p>
-                            <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
-                            <div class="travel-comment-number">0</div>
-                    
-                        </div>
-                    
-                        <div class="post-shortlinks">
-                
-                            <a href="#" class="fa fa-facebook"></a>
-                    
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
-                    
-                            <a href="#" class="fa fa-stumbleupon"></a>
-
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="travel-1-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">38</p>
-                    
-                        </div>
-                    
-                    </div>
-                                    
-                </div>
-            
-                <div id="travel-6">
-            
-                    <img id="post-6-img" src="pics/travel%206.jpg">
-                    <div class = "travel-texts">
-                
-                        <p class="post-type">TECHNOLOGY, TRAVEL</p>
-                    
-                        <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/08/17/top-15-social-network-app-you-need-to-travel/"><p>Top 15 Social Network App You Need To Travel</p></a>
-                    
-                        <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live...</div>
-                    
-                        <div class="post-author-date-link">
-                    
-                            <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                            <p class="dash">-</p>
-                            <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">August 17, 2018</a>
-                            <p class="dash">-</p>
-                            <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
-                            <div class="travel-comment-number">0</div>
-                    
-                        </div>
-                    
-                        <div class="post-shortlinks">
-                
-                            <a href="#" class="fa fa-facebook"></a>
-                    
-                            <a href="#" class="fa fa-google-plus"></a>
-
-                            <a href="#" class="fa fa-pinterest"></a>
-                    
-                            <a href="#" class="fa fa-stumbleupon"></a>
-
-                            <a href="#" class="fa fa-twitter"></a>
-                                            
-                        </div>
-                    
-                        <div id="travel-1-circle">
-                    
-                            <img class="like" src="pics/empty%20heart.png">
-                            <p class="like-number">28</p>
-                    
-                        </div>
-                    
-                    </div>
-                                    
-                </div>
-        
-            </div>
-          </div>
-
-            
-            <div id="gallery">
-            
                 <div id="gal-text">
                 
                     OUR GALLERY
                 
                 </div>
+
+                <div class="container">
                 
-                <div id="gal-img">
+                    <div id="gal-img">
                 
-                    <div class="gal-img-1">
+                        <div class="gal-img-1">
                 
-                        <img src="pics/gal-img-1.jpeg">
+                            <img src="pics/gal-img-1.jpeg">
                 
-                    </div>
+                        </div>
                 
-                    <div class="gal-img-2">
+                        <div class="gal-img-2">
                 
-                        <img src="pics/gal-img-2.jpg">
+                            <img src="pics/gal-img-2.jpg">
                 
-                    </div>
+                        </div>
                 
-                    <div class="gal-img-3">
+                        <div class="gal-img-3">
                 
-                        <img src="pics/gal-img-3.jpg">
+                            <img src="pics/gal-img-3.jpg">
                 
-                    </div>
+                        </div>
                 
-                    <div class="gal-img-4">
+                        <div class="gal-img-4">
                 
-                        <img src="pics/gal-img-4.jpg">
+                            <img src="pics/gal-img-4.jpg">
                 
-                    </div>
+                        </div>
                 
-                    <div class="gal-img-5">
+                        <div class="gal-img-5">
                 
-                        <img src="pics/gal-img-5.jpg">
+                            <img src="pics/gal-img-5.jpg">
                 
+                        </div>
+                    
                     </div>
                     
                 </div>
             
-            </div>
+        </section>  
             
-            
-            <div id="upper-footer">
+        <footer class="up-footer">
+
+            <div class="container">
+
+                <div id="upper-footer">
                 
-                <div id="col-1">
+                    <div id="col-1">
                     
-                    <p class="header">Akea,Blogger</p> 
-                    <p id="address">23 King Street, 5th Avenue, New York</p>
-                    <p id="phone">+1-2355-3345-5</p>
-                    <a id="e-mail" href="call@akeablog.co">call@akeablog.co</a>
+                        <p class="header">Akea,Blogger</p> 
+                        <p id="address">23 King Street, 5th Avenue, New York</p>
+                        <p id="phone">+1-2355-3345-5</p>
+                        <a id="e-mail" href="call@akeablog.co">call@akeablog.co</a>
  
-                </div>
-                    
-                <div id="col-2">
-                    
-                    <p class="header">Category</p>
-                    <div class="cat">
-                        
-                        <a href="https://demo.goodlayers.com/akea/category/technology/">Technology</a>
-                        <a id="photo" href="https://demo.goodlayers.com/akea/category/photography/">Photography</a>
-                        
-                    </div>
-                    <div class="cat">
-                        
-                        <a href="https://demo.goodlayers.com/akea/category/travel/">Travel</a>
-                        <a id="fash" href="https://demo.goodlayers.com/akea/category/fashion/">Fashion</a>
-                        
-                    </div>
-                    <div class="cat">
-                        
-                         <a href="https://demo.goodlayers.com/akea/category/food/">Food</a>
-                         <a href="https://demo.goodlayers.com/akea/category/trending/">Trending</a>
-                        
                     </div>
                     
-                 </div>
+                    <div id="col-2">
                     
-                 <div id="col-3">
+                        <p class="header">Category</p>
+                        <div class="cat">
+                        
+                            <a href="https://demo.goodlayers.com/akea/category/technology/">Technology</a>
+                            <a id="photo" href="https://demo.goodlayers.com/akea/category/photography/">Photography</a>
+                        
+                        </div>
+                        <div class="cat">
+                        
+                            <a href="https://demo.goodlayers.com/akea/category/travel/">Travel</a>
+                            <a id="fash" href="https://demo.goodlayers.com/akea/category/fashion/">Fashion</a>
+                        
+                        </div>
+                        <div class="cat">
+                        
+                            <a href="https://demo.goodlayers.com/akea/category/food/">Food</a>
+                            <a href="https://demo.goodlayers.com/akea/category/trending/">Trending</a>
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    <div id="col-3">
                      
-                     <p class="header">Follow Us</p>
+                        <p class="header">Follow Us</p>
                     
-                    <div id="footer-shortlinks">
+                        <div id="footer-shortlinks">
                 
-                         <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-facebook"></a>
                             
-                         <a href="#" class="fa fa-pinterest"></a>
+                            <a href="#" class="fa fa-pinterest"></a>
                     
-                         <a href="#" class="fa fa-skype"></a>
+                            <a href="#" class="fa fa-skype"></a>
 
-                         <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-twitter"></a>
                     
-                         <a href="#" class="fa fa-instagram"></a>
-
-                                                                       
+                            <a href="#" class="fa fa-instagram"></a>
+                                                                    
+                        </div>
+                        
                     </div>
-                        
+
                 </div>
-                    
+
             </div>
+                    
+        </footer>
                         
-                <div id="lower-footer">
+        <footer id="lower-footer">
                         
+            <div class="container">
+
+                <div class="low-footer">
+            
                     <div id="copyright">
                             
                         <p>Copyright 2018 Akea Blog, All Right Reserved</p>
@@ -3936,23 +1501,20 @@
                             
                     <div id="footer-menu">
                             
-                       <a href="https://demo.goodlayers.com/akea/">Home</a>
-                       <a href="https://demo.goodlayers.com/akea/about-us/">About</a>
-                       <a href="https://demo.goodlayers.com/akea/homepage2/#">Updates</a>
-                       <a href="https://demo.goodlayers.com/akea/homepage2/#">Advertising</a>
-                       <a href="https://demo.goodlayers.com/akea/contact/">contact</a>
+                        <a href="https://demo.goodlayers.com/akea/">Home</a>
+                        <a href="https://demo.goodlayers.com/akea/about-us/">About</a>
+                        <a href="https://demo.goodlayers.com/akea/homepage2/#">Updates</a>
+                        <a href="https://demo.goodlayers.com/akea/homepage2/#">Advertising</a>
+                        <a href="https://demo.goodlayers.com/akea/contact/">contact</a>
                             
                     </div>
+
+                </div>
+
+            </div>
                         
-              </div>
-                    
-                    
-                
-                
-            
-        
-           
-        
+        </footer>
+       
     </body>
     
-</htmlL>
+</html>
